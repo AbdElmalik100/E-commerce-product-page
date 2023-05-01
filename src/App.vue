@@ -10,8 +10,8 @@
                 <path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd" />
               </svg>
             </div>
-            <img @click="lightBox = true" class="rounded-4" width="475"
-              :src="`/src/assets/images/image-product-${defaultNum}.jpg`" alt="">
+            <img @click="lightBox = true" class="rounded-4" width="475" :src="`/images/image-product-${defaultNum}.jpg`"
+              alt="">
             <div class="next d-none position-absolute" @click="next">
               <svg xmlns="http://www.w3.org/2000/svg" width="13" height="18">
                 <path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd" />
@@ -81,7 +81,7 @@ import { ref } from 'vue'
 const defaultNum = ref(1)
 const lightBox = ref(false)
 const images = [
-  '../images/image-product-1-thumbnail.jpg',
+  './images/image-product-1-thumbnail.jpg',
   '/src/assets/images/image-product-2-thumbnail.jpg',
   '/src/assets/images/image-product-3-thumbnail.jpg',
   '/src/assets/images/image-product-4-thumbnail.jpg',
