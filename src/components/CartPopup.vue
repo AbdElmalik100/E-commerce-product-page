@@ -11,7 +11,8 @@
                             <span>$125.00 x {{ cart }}</span> <span class="total ms-2 text-black fw-bold">${{ cart *
                                 125 }}.00</span>
                         </div>
-                        <img @click="$emit('del-cart')" class="del" width="15" src="../../public/images/icon-delete.svg" alt="">
+                        <img @click="$emit('del-cart')" class="del" width="15" src="../../public/images/icon-delete.svg"
+                            alt="">
                     </div>
                     <button class="p-3 border-0 fw-bold w-100 rounded-3">Checkout</button>
                 </div>
@@ -32,6 +33,7 @@ const props = defineProps(['cart'])
     width: 350px;
     background-color: $White;
     box-shadow: 2px 5px 15px #999999;
+    z-index: 55555;
 
     .item {
         min-height: 200px;
@@ -60,4 +62,5 @@ const props = defineProps(['cart'])
             }
         }
     }
-}</style>
+}
+</style>
