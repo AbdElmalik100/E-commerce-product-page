@@ -164,6 +164,7 @@ p {
         border: 3px solid transparent;
         transition: 0.2s;
         position: relative;
+        user-select: none;
 
         &::before {
           content: '';

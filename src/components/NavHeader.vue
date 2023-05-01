@@ -173,6 +173,10 @@ header {
                 li {
                     color: $Black;
                     font-weight: bold;
+                    user-select: none;
+                    &::before {
+                        bottom: -10px;
+                    }
                 }
 
                 &.open {
