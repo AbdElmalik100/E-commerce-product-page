@@ -1,11 +1,11 @@
 <template>
     <header class="header mx-5 py-4 d-flex align-items-center justify-content-between">
         <div class="left-side d-flex align-items-center gap-5">
-            <img @click="openMenu = true" class="menu d-none" src="../../images/icon-menu.svg" alt="">
-            <img src="../../images/logo.svg" alt="">
+            <img @click="openMenu = true" class="menu d-none" src="../../public/images/icon-menu.svg" alt="">
+            <img src="../../public/images/logo.svg" alt="">
             <div class="overlay"></div>
             <ul :class="`d-flex align-items-center gap-4 ${openMenu ? 'open' : ''}`">
-                <img @click="openMenu = false" class="close d-none" src="../../images/icon-close.svg" alt="">
+                <img @click="openMenu = false" class="close d-none" src="../../public/images/icon-close.svg" alt="">
                 <li>Collections</li>
                 <li>Men</li>
                 <li>Women</li>
@@ -22,7 +22,7 @@
                 </svg>
                 <CartPopup v-if="popupOpen" :cart="cart" class="cart-popup" @del-cart="$emit('del-cart')"></CartPopup>
             </div>
-            <img width="50" src="../../images/image-avatar.png" alt="">
+            <img width="50" src="../../public/images/image-avatar.png" alt="">
         </div>
     </header>
 </template>
