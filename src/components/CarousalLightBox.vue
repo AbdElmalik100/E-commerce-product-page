@@ -12,7 +12,7 @@
                         <path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd" />
                     </svg>
                 </div>
-                <img class="rounded-3" width="425" :src="`/src/assets/images/image-product-${defaultNum}.jpg`" alt="">
+                <img class="rounded-3" width="425" :src="`../images/image-product-${defaultNum}.jpg`" alt="">
                 <div class="next position-absolute" @click="next">
                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="18">
                         <path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd" />
